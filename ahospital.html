@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ayurvedic hospital</title>
+    <link rel="stylesheet" href="ahospital.css">
+</head>
+
+<body id="bodytop">
+    <div>
+        <div id="logo">
+            <img src="alogo.jpg" height="50" width="80">
+            <h1>Punarjev Ayurveda</h1>
+            <div id="contact">
+                <img src="email.jpg" height="20" width="30"><a href="abc1234@example.com">abc1234@gmail.com</a>
+                <img src="contact.jpeg" height="20" width="30">
+                <h5> 12354524 </h5>
+                <img src="facebook.jpg" height="20" width="30"><a href="abc1234@example.com">facebook.com</a>
+                <a href="#apointment"><img src="Book.png" id="karan1" height="40" width="150">
+            </div>
+            <hr>
+            <div id="menu">
+                <a href="#home">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="conditions.html"> conditions treated</a>
+                <a href="#testimonials">Testimonials</a>
+            </div>
+        </div>
+        <section id="home">
+            <div id="image-container" style="white-space: nowrap; overflow-x: scroll;">
+                <img src="bgi.jpg" alt="Image 1" style="display: inline-block;">
+                <img src="si1.jpg" alt="Image 2" style="display: inline-block;">
+                <img src="si2.jpg" alt="Image 3" style="display: inline-block;">
+                <!-- add more images here -->
+            </div>
+        </section>
+        <div id="box4" class="box4">
+            <h1>Result-oriented Treatments for Sustaining and <br>Restoring Good health</h1>
+            <p>Sri Sri Ayurveda Hospital is a multispecialty Ayurvedic Hospital,<br> which is ISO:9001 certified,
+                ISO:22000 certified and NABH accredited, located in Bangalore, India. The hospital is truly world-class
+                with modern state of the art diagnostic facilities that offers 268 beds for patients, consulted by
+                highly experienced doctors and attended with the support of our trained and proficient staff. Through
+                our holistic approach of Ayurveda, Naturopathy, therapeutic Yoga and modern medicine, we offer
+                end-to-end personalized treatments, therapies and health regimes that are time-tested for preventive and
+                curative healthcare. The hospital is part of the Sri Sri College of Ayurvedic Science and Research
+                Center, an initiative of Sri Sri Ravi Shankar Vidya Mandir Trust.</p>
+            <div id="box">
+                <video src="v.mp4" controls></video>
+            </div>
+        </div>
+        <section id="apointment" class="box4">
+            <div id="box5">
+                <h1 id="b5h" style="padding-bottom: 10px;">BOOK AN APOINMENT</h1>
+                <form id="b5f">
+                    <fieldset>
+                        <legend>Patient Information</legend>
+
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first-name" required><br><br>
+
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" required><br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="country">Country:</label>
+                        <select id="country" name="country" required>
+                            <option value="">Select a country</option>
+                            <option value="USA">USA</option>
+                            <option value="Canada">Canada</option>
+                            <option value="UK">UK</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Other">Other</option>
+                        </select><br><br>
+
+                        <label for="comment">Comment:</label><br>
+                        <textarea id="comment" name="comment" rows="5" cols="40"></textarea><br><br>
+
+                        <label for="file">Upload File:</label>
+                        <input type="file" id="file" name="file"><br><br>
+
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
+                <section id="testimonials">
+                    <h1 style="text-align: center;font-size: 40px;">Testimonials</h1>
+                    <div id="slideshow-container">
+                        <div class="slide active">
+                            <p>I had an amazing experience at this Ayurvedic hospital. The staff was incredibly
+                                knowledgeable and friendly, and the treatments were tailored to my specific needs. I
+                                left feeling rejuvenated and refreshed. Highly recommend!</p>
+                        </div>
+                        <div class="slide">
+                            <p>"I have been struggling with a chronic condition for years and have tried countless
+                                treatments without much success. After visiting this Ayurvedic hospital, I finally found
+                                relief. The doctors and therapists took the time to listen to my concerns and created a
+                                personalized treatment plan that has made a huge difference in my quality of life."</p>
+                        </div>
+                        <div class="slide active">
+                            <p>"I was initially skeptical about trying Ayurvedic treatments, but I am so glad I did. The
+                                team at this hospital was so warm and welcoming, and the treatments were both effective
+                                and relaxing. I have already recommended this hospital to several friends and family
+                                members."</p>
+                        </div>
+                    </div>
+                    <div class="karan">
+                        <label><input type="radio" name="slide-radio" value="0" checked></label>
+                        <label><input type="radio" name="slide-radio" value="1"></label>
+                        <label><input type="radio" name="slide-radio" value="2"></label>
+                    </div>
+    
+                </section>
+            </div>
+            
+ 
+        </section>
+    </div>
+        <div id="top"><a href="#bodytop">top</a></div>
+        <footer id="footer1">
+            "© 2023"<p style="display: inline-block; font-size: large;">  &nbsp;Punarjev Ayurveda All rights are reserved</p>
+
+        <script type="text/javascript">
+            var slides = [
+                "slide1.jpg",
+                "slide2.jpg",
+                "slide3.jpg"
+            ];
+            var radioButtons = document.querySelectorAll('input[type="radio"][name="slide-radio"]');
+            for (var i = 0; i < radioButtons.length; i++) {
+                radioButtons[i].addEventListener('click', function () {
+                    var selectedValue = parseInt(this.value);
+                    showSlide(selectedValue);
+                });
+            }
+            function showSlide(slideIndex) {
+                var slides = document.querySelectorAll(".slide");
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].classList.remove("active");
+                }
+                slides[slideIndex].classList.add("active");
+            }
+            showSlide(0);
+        </script>
+</body>
+
+</html>
