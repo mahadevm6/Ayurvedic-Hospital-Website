@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(178, 252, 188);
+
+  }
+  #logo {
+    text-align:left;
+    font-size: 20px;
+    display: inline;
+  }
+  #menu
+  {
+    float: right;
+    margin-right:10px;
+    padding: 10px;
+    display: inline;
+
+  }
+  a{
+    padding: 5px;
+    margin: 3px;
+    font-size: 30px;
+    text-decoration: none;
+  }
+  h1,h5{
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+  }
+  #contact{
+    float: right;
+    margin-right: 50px;
+    margin-top: 10px;
+  }
+  hr{
+    margin-left: 500px;
+  }
